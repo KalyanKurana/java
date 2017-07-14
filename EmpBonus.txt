@@ -1,0 +1,72 @@
+/*write a java program to accept the details of 10 employees 
+details will be: EmpName 
+                 EmpSal
+->display the total income given to the employee during festival season
+bonus criteria is given below
+if salary is 10000 bonus will be 30%
+if salary is 50000 bonus will be 20%
+if salary is 100000 bonus will be 10%*/
+
+
+package oops_practice;
+import java.util.Scanner;
+
+public class JavaApplication9 {
+
+    
+    public static void main(String[] args) {
+        String eName;
+        int eSal;
+        int bSal=0;
+        int b;
+        Scanner s=new Scanner(System.in);
+        for( int i=1;i<=10;i++)
+        {
+        System.out.println("enter eName");
+        eName=s.next();
+        System.out.println("enter eSal");
+        eSal=s.nextInt();
+        if((eSal>=10000) & (eSal<50000))
+        {
+            b=(eSal*30)/100;
+            bSal=b+eSal;
+            System.out.println(bSal);
+        }
+        
+        else  if((eSal>=50000) & (eSal<100000))
+        {
+            b=(eSal*20)/100;
+            bSal=b+eSal;
+            System.out.println(bSal);
+        }
+        
+        else if(eSal>=100000)
+        {
+            b=(eSal*10)/100;
+            bSal=b+eSal;
+            System.out.println(bSal);
+        }
+        
+        }
+        
+    }
+    
+}
+
+/*Output:
+enter eName
+e1
+enter eSal
+10000
+13000
+enter eName
+e2
+enter eSal
+50000
+60000
+enter eName
+e3
+enter eSal
+100000
+110000
+*/

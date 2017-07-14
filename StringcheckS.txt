@@ -1,0 +1,28 @@
+//write a program to accept a string & check whether 3rd character of string is 'S' or not
+
+
+package oops_practice;
+import java.util.Scanner;
+
+public class JavaApplication13 {
+
+   
+    public static void main(String[] args) {
+        String s;
+        Scanner scan=new Scanner(System.in);
+        System.out.println("enter the character");
+        s=scan.next();
+        char[] c = s.toCharArray();
+        if(c[2]=='s')
+        {
+            System.out.println("Correct char");
+        }
+        else System.err.println("Wrong char");
+       
+    }
+    
+}
+/* Output:
+enter the character
+vasu
+Correct char*/

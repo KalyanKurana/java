@@ -1,0 +1,36 @@
+//WRITE A JAVA PROGRAM TO ACCEPT 10 NUMBERS AND DISPLAY SUM OF 10 NUMBERS
+
+
+package oops_practice;
+import java.util.Scanner;
+
+public class JavaApplication1 {
+
+   
+    public static void main(String[] args) {
+        int num=0,sum=0;
+        Scanner s=new Scanner(System.in);
+        
+        for(int i=0;i<=10;i++)
+        {
+            num=s.nextInt();
+            sum=sum+num;    
+        }
+        System.out.println(sum);
+    }
+}
+
+
+/*Output:
+enter 10 numbers
+1
+2
+3
+4
+5
+1
+2
+3
+4
+5
+30*/

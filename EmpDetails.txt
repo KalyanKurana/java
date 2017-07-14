@@ -1,0 +1,83 @@
+/*write a program to accept the details of10 employee like
+EmpId
+EmpName
+EmpAge
+EmpSal
+EmpDept
+->display name of employee who earn max
+->display name of employee who is elder to all*/
+
+
+package oops_practice;
+import java.util.Scanner;
+
+public class JavaApplication8 {
+
+    
+    public static void main(String[] args) {
+        String eId;
+        String eName;
+        int eAge;
+        int eSal;
+        int maxSal=0;
+        int maxAge = 0;
+        String maxName1 = null;
+        String maxName2 = null;
+        String eDept;
+         Scanner s=new Scanner(System.in);
+          for( int i=1;i<=10;i++)
+          {
+              System.out.println("Enter eId");
+              eId=s.next();
+              System.out.println("Enter eName");
+              eName=s.next();
+              System.out.println("Enter eAge");
+              eAge=s.nextInt();
+              if(eAge>maxAge)
+              {
+                  maxAge=eAge;
+                  maxName1=eName;
+                  
+              }
+             
+              System.out.println("Enter eSal");
+              eSal=s.nextInt();
+              if(eSal>maxSal)
+              {
+                  maxSal=eSal;
+                  maxName2 = eName;
+                  
+             }
+             
+              System.out.println("Enter eDept");
+              eDept=s.next();   
+          }
+           System.out.println(maxName1);
+           System.out.println(maxName2);
+    }
+    
+}
+
+/* Output:
+Enter eId
+e1
+Enter eName
+n1
+Enter eAge
+21
+Enter eSal
+100
+Enter eDept
+ece
+Enter eId
+e2
+Enter eName
+ne
+Enter eAge
+25
+Enter eSal
+10
+Enter eDept
+cse
+ne
+n1*/

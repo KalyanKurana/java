@@ -1,0 +1,95 @@
+/*write a menu driven program for calculator using java language
+menu details are mentiones below
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+5.Percentage
+6.Exit*/
+
+
+package oops_practice;
+import java.util.Scanner;
+
+
+public class JavaApplication11 {
+
+    
+    public static void main(String[] args) {
+        float a,b,result;
+        char choice,ch;
+        Scanner s =new Scanner(System.in);
+        do
+        {
+            System.out.println("1.Addiition\n");
+            System.out.println("2.Subtraction\n");
+            System.out.println("3.Multiplication\n");
+            System.out.println("4.Division\n");
+            System.out.println("5.Percentage\n");
+            System.out.println("6.Exit\n");
+            System.out.println("enter ur choice:");
+            choice=s.next().charAt(0);
+            switch(choice)
+            {
+                case '1':System.out.println("enter two numbers:");
+                a=s.nextFloat();
+                b=s.nextFloat();
+                result=a+b;
+                System.out.println("Result="+result);
+                break;
+                case '2':System.out.println("enter two numbers:");
+                a=s.nextFloat();
+                b=s.nextFloat();
+                result=a-b;
+                System.out.println("Result="+result);
+                break;
+                case '3':System.out.println("enter two numbers:");
+                a=s.nextFloat();
+                b=s.nextFloat();
+                result=a*b;
+                System.out.println("Result="+result);
+                break;
+                case '4':System.out.println("enter two numbers:");
+                a=s.nextFloat();
+                b=s.nextFloat();
+                result=a/b;
+                System.out.println("Result="+result);
+                break;
+                case '5':System.out.println("enter two numbers:");
+                a=s.nextFloat();
+                b=s.nextFloat();
+                result=a%b;
+                System.out.println("Result="+result);
+                break;
+                case '6':System.exit(0);
+                break;
+                default:System.out.println("wrongchoice!!!");
+                break;
+            }
+                System.out.println("\n-----------------------------\n");
+        }while(choice!=5);
+        
+    }
+    
+}
+
+/* Output:
+1.Addiition
+
+2.Subtraction
+
+3.Multiplication
+
+4.Division
+
+5.Percentage
+
+6.Exit
+
+enter ur choice:
+
+4
+enter two numbers:
+9
+3
+Result=3.0 */

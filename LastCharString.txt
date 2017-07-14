@@ -1,0 +1,25 @@
+//write a program to accept a string & display last character of string without using readymade string functions
+package oops_practice;
+import java.util.Scanner;
+
+public class JavaApplication15 {
+
+    
+    public static void main(String[] args) {
+         String s;
+       
+        Scanner scan=new Scanner(System.in);
+        System.out.println("enter the String");
+        s=scan.next();
+        char[] sChar = s.toCharArray();
+        int c= s.length();
+        char last = sChar[c-1];
+        System.out.println("last char is : "+last);
+       
+    }
+    
+}
+/* Output:
+enter the String
+kalyan
+last char is : n*/

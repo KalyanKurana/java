@@ -1,0 +1,35 @@
+//WRITE A JAVA PROGRAM TO ACCEPT MARKS OF 3 SUBJECTS & DISPLAY PASS IF % OF MARKS>=50 &DISPLAY FAIL IF MARKS<50
+
+package oops_practice;
+import java.util.Scanner;
+
+
+public class JavaApplication6 {
+
+    
+    public static void main(String[] args) {
+        int p,m1,m2,m3;
+        System.out.println("enter the three subjects");
+        Scanner s=new Scanner(System.in);
+         m1=s.nextInt();
+         m2=s.nextInt();
+         m3=s.nextInt();
+p=(m1+m2+m3)/3;
+if(p>=50)
+{
+System.out.println("pass");
+    
+    }
+else
+{
+    System.out.println("fail");
+}
+    }
+}
+
+/* Output:
+enter the three subjects
+35
+56
+78
+pass*/

@@ -1,0 +1,121 @@
+/*WRITE A PROGRAM IN JAVA TO ACCEPT STUDENT DETAILS LIKE 
+StudentId--must start with s followed by 4 characters
+StudentName
+StudentAge--must not be greater than 100
+StudentCity
+StudentCountry--only INDIA is allowed
+
+->Accept the details of 10 students
+->Display the total count of students whose age is greater than 21
+->Display the total count of students who belong to similar city*/
+
+
+package oops_practice;
+import java.util.Scanner;
+
+public class JavaApplication7 {
+
+    public static void main(String[] args) {
+        String sId;
+        String sName;
+        int sAge;
+        int age_count=0;
+        int hyd_count=0;
+        int pune_count=0;
+        int bza_count=0;
+        String sCity;
+        String sCountry;
+        Scanner s=new Scanner(System.in);
+        for( int i=1;i<=10;i++)
+        {
+            System.out.println("enter sId");
+        sId=s.next();
+        if((sId.charAt(0) != 's') & (sId.length()!= 5) )
+        {
+            System.out.println("invalid student id");
+        }
+            System.out.println("enter sName");
+        sName=s.next();
+            System.out.println("enter sAge");
+        sAge=s.nextInt();
+        if((sAge>100))
+        {
+            System.out.println("invalid age");
+        }
+        if(sAge>21)
+        {
+            age_count ++;
+        }
+            System.out.println("enter sCity");
+        sCity=s.next();
+        if((sCity.matches("Hyd")))
+        {
+            hyd_count++;
+        }
+        else if((sCity.matches("Pune")))
+        {
+            pune_count++;
+        }
+        if((sCity.matches("Bza")))
+        {
+            bza_count++;
+        }
+                    System.out.println("enter sCountry");
+
+        sCountry=s.next();
+        if((sCountry)!="India")
+        {
+            System.out.println("Invalid country");
+        }
+        }        
+        System.out.println("age count:"+age_count);
+        System.out.println("hyd_count:"+hyd_count);
+        System.out.println("pune_count:"+pune_count);
+        System.out.println(bza_count);
+        
+    }
+    
+}
+
+/* output:
+enter sId
+s1234
+enter sName
+
+Kalyan
+enter sAge
+105
+invalid age
+enter sCity
+Hyd
+enter sCountry
+India
+Invalid country
+enter sId
+S234567
+invalid student id
+enter sName
+vijay
+enter sAge
+20
+enter sCity
+Bza
+enter sCountry
+France
+Invalid country
+enter sId
+S123
+invalid student id
+enter sName
+harsha
+enter sAge
+24
+enter sCity
+Pune
+enter sCountry
+India
+Invalid country
+age count:2
+hyd_count:1
+pune_count:1
+1*/

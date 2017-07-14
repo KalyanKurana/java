@@ -1,0 +1,38 @@
+//write a java program to accept 3 numbers and display highest number using conditions only
+
+
+package oops_practice;
+import java.util.Scanner;
+
+
+public class JavaApplication12 {
+
+   
+    public static void main(String[] args) {
+        int num1,num2,num3;
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter three numbers:");
+        num1=s.nextInt();
+        num2=s.nextInt();
+        num3=s.nextInt();
+        if ( num1 > num2 && num1 > num3)
+        {
+            System.out.println("highest number is:"+num1);
+        }
+        else if(num2>num1&&num2>num3)
+        {
+            System.out.println("highest number is:"+num2);
+            }
+        else if(num3>num2&num3>num1)
+        {
+            System.out.println("highest number is:"+num3);
+            }
+        }
+        
+
+/* Output:
+enter three numbers:
+4
+5
+6
+highest number is:6 */
