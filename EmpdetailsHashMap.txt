@@ -1,0 +1,47 @@
+/* Write a java program to perform all operations related with HashMap
+1.Store Employee Details by using Employee class
+2.Traverse Employee details stored in collection object.
+3.elete Employee details 
+4.Update Employee details*/
+package oops_practice;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class HashmapEx {
+public static void main(String args[])
+{
+	HashMap<Integer,String> EmpDetails=new HashMap<Integer,String>();
+	EmpDetails.put(101, "kalyan");
+	EmpDetails.put(102, "vijay");
+	EmpDetails.put(103, "harsha");
+	EmpDetails.put(104, "apoo");
+	EmpDetails.put(105, "kiran");
+	EmpDetails.remove(103);
+
+	Set set=EmpDetails.entrySet();
+	Iterator itr=set.iterator();
+	while(itr.hasNext())
+	{   
+		Map.Entry mapentry=(Map.Entry)itr.next();
+		System.out.println("key  is"+mapentry.getKey());
+		System.out.println("value is"+mapentry.getValue());
+	}
+	
+}
+}
+
+
+/*Output:
+
+key  is101
+value iskalyan
+key  is102
+value isvijay
+key  is104
+value isapoo
+key  is105
+value iskiran
+*/

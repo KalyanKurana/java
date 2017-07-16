@@ -1,0 +1,23 @@
+//Write a java program to print number of words in a given String..
+
+package oops_practice;
+import java.util.Scanner;
+
+public class Word {
+	public static void main(String[] aa)
+	{
+		String s;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the word");
+		s=sc.next();
+		char[] sChar=s.toCharArray();
+		int c=s.length();
+		System.out.println(c);		
+	}
+}
+
+
+/*Output:
+enter the word
+final year convocation
+5 */

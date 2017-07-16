@@ -1,0 +1,56 @@
+/* Write a  program to use ArrayList which will contain Student details and dispplay Student data such as Name,Age,City,State
+package oops_practice;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class ArrayStudent {
+	public static void StudentDetails()
+	{
+		ArrayList st =new ArrayList();
+		st.add("vijay");
+		st.add(21);
+		st.add("hyd");
+		st.add("ts");
+		
+		st.add("kalyan");
+		st.add(20);
+		st.add("bza");
+		st.add("ap");
+		
+		st.add("harsha");
+		st.add(25);
+		st.add("calcutta");
+		st.add("wb");
+		
+		
+		
+	System.out.println(st);
+	Iterator itr=st.iterator();
+	while(itr.hasNext())
+	{
+		System.out.println(itr.next());
+	}
+		
+	}
+	public static void main(String[] args)
+	{
+		
+		StudentDetails();
+	}
+
+}
+
+/*Output:
+[vijay, 21, hyd, ts, kalyan, 20, bza, ap, harsha, 25, calcutta, wb]
+vijay
+21
+hyd
+ts
+kalyan
+20
+bza
+ap
+harsha
+25
+calcutta
+wb*/
