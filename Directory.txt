@@ -1,0 +1,29 @@
+//Write a program to check whether a file is present in directory or not...
+
+package oops_practice;
+import java.io.*;
+
+public class Presentfile {
+	public static void main(String[] aa)
+	{
+		try
+		{
+			File f=new File("D//abc.jpg");
+			if(f.isFile())
+			{
+				System.out.println("directory");
+				
+			}
+			else
+			{
+				System.out.println("not directoty");
+				
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+
+}

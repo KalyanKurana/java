@@ -1,0 +1,50 @@
+//Write a program to count number of files....
+
+
+package oops_practice;
+import java.io.*;
+
+public class CountFiles {
+	public static void main(String[] aa)
+	{
+		try
+		{
+			File f=new File("C:\\Program Files (x86)");
+			System.out.println("number of file in program files:"+f.length());
+			String arr[]=f.list();
+			for(String s:arr)
+			{
+				System.out.println(s);
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+
+}
+
+/*Output:
+number of file in program files:4096
+Common Files
+desktop.ini
+Google
+Intel
+Internet Explorer
+Microsoft Analysis Services
+Microsoft Office
+Microsoft SQL Server
+Microsoft.NET
+Mozilla Firefox
+MySQL
+VMware
+Windows Defender
+Windows Mail
+Windows Media Player
+Windows Multimedia Platform
+Windows NT
+Windows Photo Viewer
+Windows Portable Devices
+Windows Sidebar
+*/

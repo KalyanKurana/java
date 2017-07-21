@@ -1,0 +1,33 @@
+//Write a program to copy different types of  files in different drives from a single file...
+
+
+package oops_practice;
+import java.io.*;
+
+public class Multiplecopy {
+	public static void main(String[] aa)
+	{
+	try
+	{
+		FileWriter fw=new FileWriter("E:\\java\\xyz.txt");
+		FileWriter fw1=new FileWriter("E:\\chotu\\xyz.doc");
+		FileReader fr=new FileReader("D:\\abc.txt");
+		int r=0;
+		while((r=fr.read())!=-1)
+		{
+			fw.write(r);
+			fw1.write(r);
+		}
+		fw.flush();
+		fw1.flush();
+		
+	}
+	catch(Exception e)
+	{
+		System.out.println(e);
+	}
+	System.out.println("success");
+	}
+
+
+}

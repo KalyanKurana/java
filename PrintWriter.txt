@@ -1,0 +1,33 @@
+//Write a program using PrintWriter...
+
+
+package oops_practice;
+import java.io.*;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class Buffrea {
+	public static void main(String[] aa)
+	{
+		try
+		{
+			PrintWriter pw=new PrintWriter("D:\\ijk.txt");
+			pw.write("hai");
+			pw.print(100);
+			pw.println("bye");
+			pw.write(100);
+			pw.print(12.5);
+			pw.print(true);
+			pw.flush();
+		
+			
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+
+}

@@ -1,0 +1,29 @@
+//Write aprogram for LinkedHashSet
+package oops_practice;
+import java.util.*;
+
+import java.util.HashSet;
+
+public class Lnkedhshset {
+	public static void main(String[] aa)
+	{
+		
+		LinkedHashSet hs=new LinkedHashSet();
+		hs.add(12);
+		hs.add(12.6);
+		hs.add("hai");
+		hs.add(true);
+		hs.add('a');
+		//hs.clear();
+		hs.remove(12);
+		if(hs.isEmpty())
+		{
+			System.out.println("empty");
+		}
+		else
+		{
+			System.out.println("not empty");
+		}
+		
+	}
+}

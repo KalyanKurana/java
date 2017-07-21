@@ -1,0 +1,29 @@
+//Write a program to read from one file and write to another file...
+
+package oops_practice;
+import java.io.*;
+
+
+public class Entirefile {
+	public static void main(String[] aa)
+	{
+	try
+	{
+		FileWriter fw=new FileWriter("D:\\xyz.txt");
+		FileReader fr=new FileReader("D:\\abc.txt");
+		int r=0;
+		while((r=fr.read())!=-1)
+		{
+			fw.write(r);
+		}
+		fw.flush();
+		
+	}
+	catch(Exception e)
+	{
+		System.out.println(e);
+	}
+	System.out.println("success");
+	}
+
+}

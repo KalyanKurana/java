@@ -1,0 +1,30 @@
+//HashSet program....
+
+
+package oops_practice;
+import java.util.*;
+
+public class HshCet {
+	public static void main(String[] aa)
+	{
+		
+		HashSet hs=new HashSet();
+		hs.add(12);
+		hs.add(12.6);
+		hs.add("hai");
+		hs.add(true);
+		hs.add('a');
+		//hs.clear();
+		hs.remove(12);
+		if(hs.isEmpty())
+		{
+			System.out.println("empty");
+		}
+		else
+		{
+			System.out.println("not empty");
+		}
+		
+	}
+
+}

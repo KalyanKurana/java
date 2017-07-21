@@ -1,0 +1,20 @@
+//Write a program to create a new file....
+
+package oops_practice;
+import java.io.*;
+public class Filecreation {
+	public static void main(String[] aa)
+	{
+		try{
+			File f=new File("D://abc.doc");
+			f.createNewFile();
+	
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		System.out.println("hai");
+	}
+
+}

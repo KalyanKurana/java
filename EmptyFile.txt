@@ -1,0 +1,30 @@
+//Write a program to delete an empt file....
+
+
+package oops_practice;
+import java.io.*;
+
+
+public class EmptyFiles {
+	public static void main(String[] aa)
+	{
+		try
+		{
+			File f=new File("D:\\bcd");
+			File fr[]=f.listFiles();
+			for(File s:fr)
+			{
+				if(s.length()==0)
+				{
+					s.delete();
+				}
+				System.out.println(s.length());
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+
+}

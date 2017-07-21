@@ -1,0 +1,27 @@
+//Write a program using BufferWriter....
+
+
+package oops_practice;
+import java.io.*;
+
+public class Buffwri {
+	public static void main(String[] aa)
+	{
+		try
+		{
+			FileWriter fr=new FileWriter("D:\\ijk.txt");
+			BufferedWriter bw=new BufferedWriter(fr);
+			bw.write("hai");
+			bw.write("hello");
+			bw.write("hru");
+			bw.write(123);
+			bw.flush();
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+
+}

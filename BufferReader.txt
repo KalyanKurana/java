@@ -1,0 +1,28 @@
+//Write a program using Buffer reader ....
+package oops_practice;
+import java.io.*;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class Buffrea {
+	public static void main(String[] aa)
+	{
+		try
+		{
+			FileReader fr=new FileReader("D:\\ijk.txt");
+			BufferedReader bw=new BufferedReader(fr);
+			String str=null;
+			while((str=bw.readLine())!=null)
+			{
+				System.out.println(str);
+			}
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+
+}

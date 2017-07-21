@@ -1,0 +1,26 @@
+//Write a program to copy audio,video from file and copy to another file using FileInputStream and FileOutputStream....
+
+package oops_practice;
+import java.io.*;
+
+public class Fios {
+	public static void main(String[] aa)
+	{
+		try
+		{
+			FileInputStream f=new FileInputStream("D:\\abc\\h.mp3");
+				FileOutputStream fis=new  FileOutputStream("D:\\xyz.mp3");
+				int i=0;
+				while((i=f.read())!=-1)
+				{
+					fis.write(i);
+				}
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+
+}

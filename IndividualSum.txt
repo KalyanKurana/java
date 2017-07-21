@@ -1,0 +1,30 @@
+//Write a program to give sum of each individual numbers in a number....
+
+
+package oops_practice;
+import java.io.*;
+
+public class IndividualSum {
+	public static void main(String[] aa) throws IOException
+	{
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("enter a number:");
+		int n=Integer.parseInt(br.readLine());
+		int num=0,sum=0;
+		while(n!=0)
+		{
+			num=n%10;
+			sum=sum+num;
+			n=n/10;
+		}
+		System.out.print("Sum of individual digits"+sum);
+	}
+
+}
+
+
+/* Output:
+
+enter a number:
+786
+Sum of individual digits: 21*/
